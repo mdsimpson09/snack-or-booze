@@ -7,7 +7,7 @@ import { Navbar, Nav, NavItem, NavLink } from "reactstrap"; // Import NavLink fr
 function NavBar() {
   return (
     <div>
-      <Navbar expand="md">
+      <Navbar className="navbar-brand" expand="md">
         <NavLink to="/" className="navbar-brand" tag={RouterNavLink} exact>
           Snack or Booze
         </NavLink>
@@ -27,7 +27,7 @@ function NavBar() {
 
           <NavItem>
             <NavLink to="/order" tag={RouterNavLink}>
-              Place Order
+              Place 
             </NavLink>
           </NavItem>
 

@@ -9,7 +9,6 @@ import Home from "./Home";
 import FoodItem from "./components/FoodItem";
 import DrinkItem from "./components/DrinkItem"; 
 import { Route, Switch } from "react-router-dom";
-import OrderConfirmation from "./components/OrderConfirmation";
 import Order from "./components/Order";
 
 
@@ -79,9 +78,7 @@ function App() {
             <Route path="/order">
               <Order />
             </Route>
-            <Route path="/order-confirmation">
-              <OrderConfirmation />
-            </Route>
+     
             <Route>
               <p>Hmmm. I can't seem to find what you want.</p>
             </Route>
