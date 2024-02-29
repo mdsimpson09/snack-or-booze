@@ -1,3 +1,19 @@
+// unroll@1.0.0 test
+// > jest
+
+//  PASS  ./unroll.test.js
+//   #unroll
+//     ✓ is a function (3 ms)
+//     ✓ unrolls a square array correctly (1 ms)
+//     ✓ unrolls a smaller square array correctly
+
+// Test Suites: 1 passed, 1 total
+// Tests:       3 passed, 3 total
+// Snapshots:   0 total
+// Time:        0.206 s
+// Ran all test suites.
+// Marli@Marlis-MBP unroll % 
+
 const unroll = require("./unroll");
 
 describe("#unroll", function () {
