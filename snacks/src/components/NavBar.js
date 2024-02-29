@@ -1,8 +1,8 @@
 
 import React from "react";
 import "./NavBar.css";
-import { NavLink as RouterNavLink } from "react-router-dom"; // Alias to avoid naming conflict
-import { Navbar, Nav, NavItem, NavLink } from "reactstrap"; // Import NavLink from reactstrap
+import { NavLink as RouterNavLink } from "react-router-dom"; 
+import { Navbar, Nav, NavItem, NavLink } from "reactstrap"; 
 
 function NavBar() {
   return (
@@ -27,7 +27,7 @@ function NavBar() {
 
           <NavItem>
             <NavLink to="/order" tag={RouterNavLink}>
-              Place 
+              Order 
             </NavLink>
           </NavItem>
 
