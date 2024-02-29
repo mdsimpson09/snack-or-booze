@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import SnackOrBoozeApi from "./Api";
-import logo from './logo.svg';
 import './App.css';
-import NavBar from "./NavBar";
+import NavBar from "./components/NavBar";
 import { BrowserRouter } from "react-router-dom";
-import FoodMenu from "./FoodMenu";
-import DrinkMenu from "./DrinkMenu";
+import FoodMenu from "./components/FoodMenu";
+import DrinkMenu from "./components/DrinkMenu";
 import Home from "./Home";
-import FoodItem from "./FoodItem";
-import DrinkItem from "./DrinkItem"; 
+import FoodItem from "./components/FoodItem";
+import DrinkItem from "./components/DrinkItem"; 
 import { Route, Switch } from "react-router-dom";
-
+import OrderConfirmation from "./components/OrderConfirmation";
+import Order from "./components/Order";
 
 
 function App() {
@@ -61,18 +61,27 @@ function App() {
             <Route exact path="/drinks">
 
               <DrinkMenu items={drinks} title="Drinks" />
-
             </Route>
+
             <Route path="/snacks/:id">
 
               <FoodItem items={snacks} cantFind="/snacks" />
-
             </Route>
+
             <Route path="/drinks/:id">
 
           <DrinkItem items={drinks} cantFind="/drinks" />
-          
           </Route>
+
+            <Route exact path="/">
+              <Home snacks={snacks} drinks={drinks} />
+            </Route>
+            <Route path="/order">
+              <Order />
+            </Route>
+            <Route path="/order-confirmation">
+              <OrderConfirmation />
+            </Route>
             <Route>
               <p>Hmmm. I can't seem to find what you want.</p>
             </Route>
