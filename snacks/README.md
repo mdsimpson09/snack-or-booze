@@ -6,6 +6,8 @@ run: json-server --watch db.json --port 5000
 # starting this app
 Pay close attention to the package.json. this app uses an outdated version of react and react-dom. 
 
+    "npm start" 
+
 # Ensure you have these dependencies 
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
