@@ -11,5 +11,5 @@ Pay close attention to the package.json. this app uses an outdated version of re
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
-    "reactstrap": "^9.2.2",
+    "reactstrap": "^9.2.2"
 

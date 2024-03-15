@@ -7,7 +7,7 @@ import { Navbar, Nav, NavItem, NavLink } from "reactstrap";
 function NavBar() {
   return (
     <div>
-      <Navbar className="navbar-brand" expand="md">
+      <Navbar className="navbar-brand mb-20" expand="md">
         <NavLink to="/" className="navbar-brand" tag={RouterNavLink} exact>
           Snack or Booze
         </NavLink>

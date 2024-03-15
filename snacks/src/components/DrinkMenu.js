@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./DrinkMenu.css"; // Ensure the CSS file name matches
+import "./DrinkMenu.css"; 
 import {
   Card,
   CardBody,
